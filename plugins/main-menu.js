@@ -253,7 +253,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
     // Imagen del menú
-    let pp = 'https://i.postimg.cc/dt41PbNh/menu1.jpg'
+    let pp = 'https://i.postimg.cc/BZwZkTrF/menujeffx-Bot.jpg'
 
     // Enviar el menú
     conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, { mentions: [m.sender] })
